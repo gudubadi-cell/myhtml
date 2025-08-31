@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <video autoplay muted loop id="background-video">
+        <source src="button.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="main-container">
+        <h2>Welcome!</h2>
+        <div class="button-container">
+            <button id="proposeBtn">Propose</button>
+            <button id="breakupBtn">Break Up</button>
+            <button id="birthdayBtn">Birthday</button>
+        </div>
+        <div id="actionForm" class="hidden">
+            <input type="text" id="nameInput" placeholder="Enter recipient's name" class="text-input">
+            <button id="submitBtn">Submit</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+/* Video background for login page */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+
+.login-container, .main-container, .result-container {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.login-container h2, .main-container h2 {
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* 3D Button Styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    color: white;
+    position: relative;
+    box-shadow: 0 6px #666;
+    top: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+button:active {
+    box-shadow: 0 2px #666;
+    top: 4px;
+}
+
+/* Specific button colors */
+.login-container button[type="submit"] {
+    background-color: #007bff;
+}
+
+#proposeBtn {
+    background-color: #28a745;
+}
+
+#breakupBtn {
+    background-color: #dc3545;
+}
+
+#birthdayBtn {
+    background-color: #FF69B4;
+}
+
+#submitBtn {
+    background-color: #007bff;
+}
+
+#cancelBtn {
+    background-color: #6c757d;
+}
+
+/* Button Color Change on Click */
+#proposeBtn:active {
+    background-color: #1a6d2c;
+}
+
+#breakupBtn:active {
+    background-color: #a32731;
+}
+
+#birthdayBtn:active {
+    background-color: #C71585;
+}
+
+#submitBtn:active {
+    background-color: #0056b3;
+}
+
+#cancelBtn:active {
+    background-color: #4a4e51;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.text-input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#message {
+    color: red;
+    margin-top: 10px;
+}

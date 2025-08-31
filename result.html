@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay muted loop></video>
+    <audio id="background-audio" autoplay loop></audio>
+    <div class="result-container">
+        <h2 id="resultTitle"></h2>
+        <p id="resultMessage"></p>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>
